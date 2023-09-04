@@ -1,3 +1,10 @@
+# Pasos
+1. git clone https://github.com/comofueps/appalmacen.git
+2. Entrar a la carpeta y dar click en la ruta, luego escribir CMD y presionar enter para que se nos abra el simbolo del sistema en esa ruta
+3. Escribimos "code ." para abrir el visual estudio code 
+4. Abrimos una nueva terminal y ejecutamos el comando npm install para que se instalen todos los archivos necesarios 
+
+
 # Frontendalmacen
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
