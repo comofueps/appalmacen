@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -8,7 +8,7 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./menuauxiliar.component.css']
 })
 export class MenuauxiliarComponent {
-  items: MenuItem[] | undefined;
+  items: MenuItem[] =[];
   @Input() rutaDeseada: string = '';
 
   ngOnInit(): void {
@@ -16,7 +16,8 @@ export class MenuauxiliarComponent {
       {
         label: 'Añadir',
         icon: 'pi pi-fw pi-plus',        
-        routerLink: this.rutaDeseada+'/add'
+        routerLink: this.rutaDeseada+'/add',  
+        
       },
       {
         label: 'Modificar',
